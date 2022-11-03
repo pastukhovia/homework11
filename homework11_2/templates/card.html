@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Card</title>
+</head>
+<body>
+    {% if item %}
+        <h1>{{ item['name'] }}</h1>
+        <p>{{ item['position'] }}</p>
+        <img src="{{ item['picture'] }}" width=200/>
+        <p>{{ item['skills'] }}</p>
+    {% else %}
+        <p>Сотрудника с таким номером нет</p>
+    {% endif %}
+</body>
+</html>
